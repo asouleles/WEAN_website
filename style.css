@@ -90,7 +90,7 @@ body{
 }
 
 .hero {
-    height: calc(100% - 80px);
+    height: 100%;
     background-position: center;
     background-color: #D7D2FE;
     background-size: cover;
