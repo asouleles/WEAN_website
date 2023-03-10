@@ -86,8 +86,8 @@ body{
 
 .hero {
     height: calc(100vh - 80px);
-    background-image: url(328790676_169724359172787_7454131676130962626_n.gif);
     background-position: center;
+    background-color: #2C92C6;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -108,5 +108,12 @@ body{
     justify-content: center;
     color: #0F628B;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
 
+}
+
+.hero .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
