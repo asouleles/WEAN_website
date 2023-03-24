@@ -6,7 +6,13 @@
 
 body{
     font-family: Verdana, Tahoma, sans-serif !important;
+    background-color: #D7D2FE;
 
+
+}
+
+*::-webkit-scrollbar{
+    display: none;
 }
 
 .menu__bar{
@@ -90,7 +96,7 @@ body{
 }
 
 .hero {
-    height: 100%;
+    height: auto;
     background-position: center;
     background-color: #D7D2FE;
     background-size: cover;
@@ -113,6 +119,7 @@ body{
     justify-content: center;
     color: #0F628B;
     padding-bottom: 40px;
+    padding-top: 20px;
 
 }
 
@@ -120,4 +127,241 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
+    background-color: transparent;
+}
+
+#show{
+
+    display: none;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+
+
+
+@media(max-width: 700px){
+
+
+    /* From here for dropdown menu*/
+
+
+    .container{
+        width: 100%;
+    }
+
+    
+
+    .container-inline{
+        margin-right: auto;
+        margin-left: auto;
+        width: 1100px;
+        height: 45px;
+        background-color: #3c3c3c;
+    }
+
+    ul{
+        list-style-type: none;
+        height: 45px;
+        background-color: #3c3c3c;
+
+    }
+
+    .container-inline ul li{
+        display: inline-block;
+        font-size: 17px;
+        position: relative;
+        top: 50%;
+        transform: translate(0%, -50%);
+        margin-left: 5px;
+        margin-right: 5px;
+        
+
+
+    }
+
+    .container-inline ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        background-color: #3c3c3c;
+
+
+    }
+
+    .container-inline ul li a:hover{
+        background-color: white;
+        color: black;
+    }
+
+    .container-inline ul li.active a{
+        background-color: white;
+        color: black;
+    }
+
+
+
+
+    .bar-menu .container-bar-menu .container-inline li{
+        display: block;
+        background-color: aqua;
+        width: 100;
+    }
+
+    .nav{
+        width:100%;
+        background: #24262b;
+        position: absolute;
+        height:100vh;
+        top: 0;
+        margin: 0;
+        z-index: 999;
+        display: none;
+    }
+
+    .container-bar-menu{
+        background-color: #3c3c3c;
+        position: absolute;
+        height:100vh;
+        width: 300px;
+        top: 0;
+        margin: 0;
+        left: 0;
+        z-index: 999;
+        display: none;
+    }
+
+    .container-inline ul li{
+        display: block;
+        background-color: transparent;
+        height:40px;
+        font-size: 17px;
+        margin: 0;
+
+    
+    }
+
+    .container-inline ul{
+        background-color: transparent;
+        padding: 30px;
+        margin-top: 150px;
+        width: 100%;
+        height:60px;
+        display: block;
+    
+    }
+
+    .container-inline{
+        background-color: transparent;
+        width: 100%;
+        height:100vh;
+    
+    }
+
+    nav .fa{
+        display: block;
+        color:white;
+        margin: 10px;
+        font-size: 30;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .container-inline ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px;
+        background-color: transparent;
+        height: 80px;
+    
+    
+    }
+
+    #show{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        height:auto;
+        width: 100%;
+
+        
+    }
+
+    #show i{
+        height: 20px;
+        line-height: 20px;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .container-inline ul li a:focus{
+        color: #fa88a9;
+        background-color: transparent;
+        transition: 0.5s; 
+
+    }
+
+    .container-inline ul li a{
+        background-color: transparent;
+        text-decoration: none;
+        color: white;
+    }
+
+    .container-inline ul li a:hover{
+        background-color: transparent;
+        text-decoration: none;
+        
+    }
+
+    .container-inline ul li.active a{
+        font-weight: bold;
+        background-color: transparent;
+        color: #fa88a9;
+    }
+
+    /*  Stop    */
+
+    .hero .image{
+        width: 100%;
+        z-index: 0;
+
+    }
+
+    .hero .image img{
+        width: 200px;
+        height: auto;
+        
+    }
+
+
+    .hero .home-content .text-1{
+        font-size: 20px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #0F628B;
+        padding-bottom: 40px;
+    
+    }
+
+    .max-width{
+        width: 100%;
+        padding: 0;
+        margin: auto;
+        z-index: 0;
+    }
+
+    .menu__bar{
+        z-index: 0;
+
+    }
+
+
+
+
+
 }
