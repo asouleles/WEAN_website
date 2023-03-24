@@ -11,17 +11,28 @@
     <div class="menu__bar">
         <div class="logo"><a href="index.html"><img src="image.png"></img><span></span></a></div>
 
-        <ul>
-            <li><a href='index.html'>Home</a></li>
-            
-            <li class='active'><a href='download.html'>Download</a></li>              
+        <nav id="bar-menu">
+            <div class="container-bar-menu"  id="this">
+                <div class="container-inline">
+                    <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                    <ul>
+                        <li class='active'><a href='index.html'>Home</a></li>
                 
+                        <li><a href='download.html'>Download</a></li>
+                            
+            
+                        <li><a href='contact.html'>Contact</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </nav> 
 
-            <li><a href='contact.html'>Contact</a></li>
-    
-        </ul>
+        
 
     </div>
+    <p id="show"><i class="fa fa-bars" aria-hidden="true" style="padding-right: 10px;" onclick="showMenu()"></i> 
+    </p>
+
 
 
 
@@ -57,6 +68,21 @@
              </div>
             
     </section>
+
+
+<script>
+    function hideMenu(){
+        document.getElementById('this').setAttribute("style", "display:none;");
+        document.getElementById('footer-id').setAttribute("style", "z-index:0;");
+        document.getElementById('content-id').setAttribute("style", "z-index:0;");
+    }
+
+    function showMenu(){
+        document.getElementById('this').setAttribute("style", "display:block;");
+        document.getElementById('footer-id').setAttribute("style", "z-index:-1;");
+        document.getElementById('content-id').setAttribute("style", "z-index:-1;");
+    }
+</script>
     
 </body>
 </html>
